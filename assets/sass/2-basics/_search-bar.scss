@@ -1,0 +1,41 @@
+
+
+.menu-src {
+    @include flex__center;
+
+    input {
+        width: 0px;
+        border: none;
+        background: none;
+        padding-left: 10px;
+        @include cursor__transition;
+
+        &::placeholder {
+            color: $placeholder__color;
+            font-size: 15px;
+            font-weight: $regular__weight;
+            font-family: $primary__family;
+            letter-spacing: 0.3px;
+        }
+    }
+
+    &:focus-within input {
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    a {
+        i {
+            color: $brand__color;
+            font-size: $md__size;
+            display: inline-block;
+            @include cursor__transition;
+            margin-left: 12px;
+        }
+
+        &:hover {
+            color: $brand__color;
+            text-decoration: none;
+        }
+    }
+}

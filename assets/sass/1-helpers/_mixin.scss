@@ -1,0 +1,37 @@
+
+
+// ALL BUTTON
+@mixin button__content {
+    color: $wh__color;
+    font-size: $sm__size;
+    font-weight: $medium__weight;
+    font-family: $primary__family;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+
+// ALL TRANSITION BROWSER PREFIX
+@mixin cursor__transition {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+
+// ALL FLEX PROPERTY
+@mixin flex__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// BACKGROUND IMAGE PROPERTY
+@mixin background__property {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

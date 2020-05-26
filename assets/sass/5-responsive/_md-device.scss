@@ -1,0 +1,208 @@
+
+
+
+@media (min-width: 768px) and (max-width: 991px) { 
+
+    // =====================================
+    //       INDEX NAVBAR MEDIA QUERY
+    //======================================
+    .menu-head {
+        padding: 15px 15px !important;
+
+        .container {
+            .navbar-brand {
+                img {
+                    width: 150px;
+                    height: auto;
+                }
+            }
+
+            .navbar-toggler {
+                &:focus {
+                    outline: none !important;
+                }
+
+                img {
+                    width: 22px;
+                    height: auto;
+                }
+            }
+
+            .navbar-collapse {
+                text-align: center;
+                padding: 25px 0px 15px;
+
+                ul {
+                    li {
+                        margin-left: 0px;
+                        margin-bottom: 8px !important;
+
+                        a {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                .menu-src {
+                    margin-bottom: 20px;
+
+                    a {
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .menu-btn {
+                    .book-btn {
+                        margin-left: 0px;
+                    }
+
+                    .dots-btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // =====================================
+    //       INDEX BANNER MEDIA QUERY
+    //======================================
+    #banner-part {
+        padding: 100px 0px;
+
+        .event-img {
+            width: 350px;
+            bottom: -38px;
+        }
+
+        .container {
+            .micro-img {
+                bottom: -100px;
+                right: 8%;
+                height: 400px;
+            }
+            .g-img {
+                top: -85px;
+                left: -60px;
+                width: auto;
+                height: 190px;
+            }
+
+            .video-img {
+                width: 70px;
+                height: 70px;
+                line-height: 66px;
+                top: 60%;
+                left: 57%;
+            }
+
+            .banner-content {
+                h1 {
+                    font-size: 40px;
+                    line-height: 47px;
+                }
+
+                h2 {
+                    font-size: 22px;
+                }
+            }
+
+            .banner-btn {
+                .pur-btn {
+                    padding: 18px 28px;
+                    font-size: 14px;
+
+                    img {
+                        height: 16px;
+                    }
+                }
+
+                .add-btn {
+                    font-size: 14px;
+
+                    img {
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // =====================================
+    //       INDEX ABOUT MEDIA QUERY
+    //======================================
+    #about-part {
+        padding: 65px 0px 65px;
+
+        .container {
+            .about-element {
+                top: -45px;
+                left: -15px;
+                width: auto;
+                height: 80px;
+            }
+
+            .about-content {
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .about-heading {
+                    h2 {
+                        width: 280px;
+                        font-size: 40px;
+                        line-height: 46px;
+                    }
+                }
+
+                .about-list {
+                    margin-left: 0px;
+                    margin-top: 45px;
+                }
+            }
+        }
+
+        .about-count {
+            position: unset;
+            background: unset;
+            width: 650px;
+            padding: 0px;
+            margin: 50px auto 0px;
+
+            &::before {
+                display: none;
+            }
+
+            ul {
+                justify-content: space-between;
+
+                li {
+                    width: 125px;
+                    text-align: center;
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        margin-right: 0px;
+                    }
+
+                    h3 {
+                        font-size: 40px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+} // MEDIA QUERY CLOSING BRACKET

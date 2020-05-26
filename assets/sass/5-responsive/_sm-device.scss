@@ -1,0 +1,198 @@
+
+
+
+
+@media (min-width: 576px) and (max-width: 767px) { 
+
+    // =====================================
+    //       INDEX NAVBAR MEDIA QUERY
+    //======================================
+    .menu-head {
+        padding: 15px 15px !important;
+
+        .container {
+            .navbar-brand {
+                img {
+                    width: 150px;
+                    height: auto;
+                }
+            }
+
+            .navbar-toggler {
+                &:focus {
+                    outline: none !important;
+                }
+
+                img {
+                    width: 22px;
+                    height: auto;
+                }
+            }
+
+            .navbar-collapse {
+                text-align: center;
+                padding: 25px 0px 15px;
+
+                ul {
+                    li {
+                        margin-left: 0px;
+                        margin-bottom: 8px !important;
+
+                        a {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                .menu-src {
+                    margin-bottom: 20px;
+
+                    a {
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .menu-btn {
+                    .book-btn {
+                        margin-left: 0px;
+                    }
+
+                    .dots-btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // =====================================
+    //       INDEX BANNER MEDIA QUERY
+    //======================================
+    #banner-part {
+        padding: 80px 0px;
+
+        .event-img {
+            display: none;
+        }
+
+        .container {
+            .g-img,
+            .micro-img,
+            .video-img {
+                display: none;
+            }
+
+            .banner-content {
+                text-align: center;
+                
+                h1 {
+                    font-size: 45px;
+                    line-height: 53px;
+                }
+
+                h2 {
+                    font-size: 22px;
+                }
+
+                h2::after,
+                h3::after {
+                    display: none;
+                }
+            }
+
+            .banner-btn {
+                text-align: center;
+                @include flex__center;
+                flex-direction: column;
+
+                .pur-btn {
+                    margin-right: 0px;
+                    margin-bottom: 30px;
+                    padding: 18px 28px;
+                }
+            }
+        }
+    }
+
+
+
+    // =====================================
+    //       INDEX ABOUT MEDIA QUERY
+    //======================================
+    #about-part {
+        padding: 65px 0px 65px;
+
+        .container {
+            .about-content {
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+                .about-heading {
+                    margin-right: 0px;
+
+                    h2 {
+                        width: 100%;
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
+                }
+
+                .about-list {
+                    width: 210px;
+                    margin: 30px auto 0px;
+                }
+
+                .about-para {
+                    width: 100%;
+                }
+
+                .about-arrow {
+                    margin: 60px auto 0px;
+                }
+            }
+        }
+
+        .about-count {
+            padding: 60px 0px 0px;
+            background: unset;
+            position: unset;
+            width: 100%;
+
+            &::before {
+                display: none;
+            }
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    width: auto;
+                    text-align: center;
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        margin-right: 0px;
+                        margin-bottom: 30px !important;
+                    }
+
+                    h3 {
+                        font-size: 40px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+} // MEDIA QUERY CLOSING BRACKET

@@ -1,0 +1,88 @@
+
+
+.menu-head {
+    background-color: $wh__color;
+    padding: 25px 15px !important;
+
+    .container {
+
+        .navbar-collapse {
+            ul {
+                li {
+                    margin-left: 13px;
+
+                    a {
+                        color: $heading__color;
+                        font-size: $sm__size;
+                        font-weight: $medium__weight;
+                        font-family: $primary__family;
+                        text-transform: capitalize;
+                        position: relative;
+                        @include cursor__transition;
+
+                        &:hover {
+                            color: $brand__color;
+                        }
+
+                        &::before,
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            bottom: 0px;
+                            transform: translateX(-50%);
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: $brand__color;
+                            visibility: hidden;
+                            opacity: 0;
+                            @include cursor__transition;
+                        }
+
+                        &::before {
+                            right: 0%;
+                        }
+
+                        &::after {
+                            left: 0%;
+                        }
+
+                        &:hover::before {
+                            visibility: visible;
+                            opacity: 1;
+                            right: 35%;
+                        }
+
+                        &:hover::after {
+                            visibility: visible;
+                            opacity: 1;
+                            left: 35%;
+                        }
+                    }
+                }
+
+                li.active a {
+                    color: $brand__color;
+
+                    &::before {
+                        visibility: visible;
+                        opacity: 1;
+                        right: 35%;
+                    }
+
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                        left: 35%;
+                    }
+                }
+            }
+
+            .menu-btn {
+                .dots-btn {
+                    margin-left: 28px;
+                }
+            }
+        }
+    }
+}
